@@ -7,8 +7,9 @@ jobs:
     name: Build gbdk project
     steps:
     - name: Checkout project
-      uses: actions/checkout@v2
+    - uses: actions/checkout@v2
     - name: Build
+      uses: wujood/gbdk-2020-github-builder@1.0.5
       with:
         output-name: mainC # Rename the output file. Default is game
         source: main.c # Main source file of your project. Deafult is main.c
