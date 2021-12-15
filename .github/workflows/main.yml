@@ -13,3 +13,10 @@ jobs:
       with:
         output-name: mainC # Rename the output file. Default is game
         source: main.c # Main source file of your project. Deafult is main.c
+    - name: Upload binary to release
+      uses: svenstaro/upload-release-action@v2
+      with:
+        repo_token: ${{ secrets.GITHUB_TOKEN }}
+        file: ./mainC.gb # Result file from build is called game.gb by default. Rename it with the output-name parameter.
+        asset_name: ROM # Rename this to what ever you want
+        tag: ${{ github.ref }}
