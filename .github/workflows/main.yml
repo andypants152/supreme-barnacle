@@ -1,0 +1,14 @@
+name: Main Trunk Compiler
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Build gbdk project
+    steps:
+    - name: Checkout project
+      uses: actions/checkout@v2
+    - name: Build
+      with:
+        output-name: mainC # Rename the output file. Default is game
+        source: main.c # Main source file of your project. Deafult is main.c
