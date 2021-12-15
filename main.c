@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <gb/gb.h>
-#include <gbdk/font.h>
+#include <gb/font.h>
 
 void main(){
     font_t min_font;
