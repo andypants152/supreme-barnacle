@@ -19,5 +19,5 @@ jobs:
         repo_token: ${{ secrets.GITHUB_TOKEN }}
         file: ./mainC.gb # Result file from build is called game.gb by default. Rename it with the output-name parameter.
         asset_name: mainC.gb # Rename this to what ever you want
-        tag: v0.0.5
-        body: Bonjour, and good night!
+        tag: v0.0.6
+        body: Bonjour, addN, good night!
